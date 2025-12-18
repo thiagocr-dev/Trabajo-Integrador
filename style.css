@@ -35,11 +35,17 @@ a{
 }
 
 .btn-secondary{
+    display: flex;
+    justify-self: center;
+    align-items: center;
     padding:  16px 32px;
     border-radius: 100px;
+    width: 160px;
+    height: 41px;
+    font-size: 14px;
     background-color: white;
-    border: 1px solid var(--color-secundario-600);
-    color: var(--color-secundario-600);
+    border: 1px solid #652bdf;
+    color: #652bdf;
     font-weight: 800;
 }
 
@@ -48,9 +54,15 @@ a{
 }
 
 .btn-primary{
+    display: flex;
+    justify-self: center;
+    align-items: center;
     padding:  16px 32px;
     border-radius: 100px;
-    background-color: var(--color-secundario-600);
+    width: 160px;
+    height: 41px;
+    font-size: 14px;
+    background-color: #652bdf;
     color: white;
     font-weight: 800;
 }
@@ -65,6 +77,10 @@ a{
     display: flex;
     justify-content: center;
     height: 84px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: var(--color-principal-50);
 }
 
 .header__logo-container{
@@ -374,11 +390,11 @@ div .btn-secondary-km:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 22px 34px;
+    padding: 32px 24px;
     background-color: #ffffff;
     color: black;
-    width: 510px;
-    height: 350px;
+    width: 500px;
+    height: 300px;
 }
 
 .pay-card h2{
@@ -391,7 +407,7 @@ div .btn-secondary-km:hover{
     font-size: 18px;
     color: black;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     line-height: 1.5;
 }
 
@@ -414,4 +430,20 @@ div .btn-secondary-km:hover{
     cursor: pointer;
 }
 
+.pay-card-container-terminal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.img-pay-qr:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.img-pay-terminal:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
 
