@@ -41,7 +41,6 @@ body{
     align-items: center;
     height: 84px;
     width: 1022px;
-    padding: 0px 20px 0px 0px;
 }
 
 .btn-secondary{
@@ -157,6 +156,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 30px;
 }
 
 .section-card-benefits{
@@ -268,7 +268,6 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: black;
 }
 
 .happy-users-content{
@@ -277,10 +276,7 @@ body{
     align-items: center;
     width: 1050px;
     height: 133px;
-    /*  
     background-color: #360c72;
-    */
-    background-color: red;
     border-radius: 32px;
     padding: 32px 40px;
     margin: 24px;
@@ -531,6 +527,14 @@ footer{
     color: var(--color-parrafo);
 }
 
+.happy-users-letters{
+    display: none;
+    flex-direction: column;
+    width: 670px;
+    height: 90px;
+    padding: 0px 32px;
+}
+
 /* Media querie */
 
 @media (width < 992px){
@@ -562,41 +566,62 @@ footer{
         font-size: 30px;
     }
 
-    .vuelo-de-tu-negocio{
-        display: flex;
-    }
-
     .section-card-benefits{
         display: flex;
     }
         
     .card-benefits-left h2{
         font-size: 20px;
+        width: 210px;
+        height: 56px;
     }
 
     .card-benefits-left p{
         font-size: 16px;
+        width: 210px;
     }
 
     .card-benefits-middle h2{
         font-size: 20px;
+        width: 210px;
+        height: 56px;
     }
 
     .card-benefits-middle p{
         font-size: 16px;
+        width: 210px;
     }
 
     .card-benefits-right h2{
         font-size: 20px;
+        width: 210px;
+        height: 56px;
     }
 
     .card-benefits-right p{
         font-size: 16px;
+        width: 210px;
     }
 
-    .happy-users-content{
-        width: auto;
-        max-width: 100wh;
+    .section-card-benefits{
+        width: 800px;
+        height: 278px;
+        justify-content: space-between;
+    }
+
+    .card-benefits-left{
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-benefits-middle{
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-benefits-right{
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -612,11 +637,19 @@ footer{
     .card-benefits-mobile{
         display: flex;
     }
+    
+    .happy-users-letters-mobile{
+        background-color: var(--color-secundario-600)
+    }
 }
 
 @media (width < 500px){
     .text-container{
         display: flex;
         padding-bottom: 60px;
+    }
+
+    .happy-users{
+        margin-top: 40px;
     }
 }
