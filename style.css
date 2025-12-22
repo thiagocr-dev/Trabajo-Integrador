@@ -39,7 +39,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 84px;
     width: 1022px;
 }
 
@@ -89,6 +88,7 @@ body{
     position: sticky;
     top: 0px;
     z-index: 100;
+    height: 84px;
     background-color: var(--color-principal-50);
 }
 
@@ -112,6 +112,8 @@ body{
     gap: 16px;
     border-radius: 16px;
 }   
+Te damos la bienvenida al vuelo de tu negocio
+Elegí cuando acreditar tus ventas
 
 .header__nav-item:hover{
     background-color: var(--color-terciario-100);
@@ -134,7 +136,7 @@ body{
 }
 
 .div-header{
-    background-color: var(--color-principal-50);
+    background-color:white;
     outline: var(--color-secundario-300) solid 1px;
     width: 100wh;
 }
@@ -272,23 +274,29 @@ body{
 
 .happy-users-content{
     display: flex;
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 1050px;
-    height: 133px;
-    background-color: #360c72;
-    border-radius: 32px;
-    padding: 32px 40px;
-    margin: 24px;
+    width: 1020px;
+    height: 134px;
 }
+/*  */
 
 .happy-users-letters{
     display: flex;
     flex-direction: column;
-    width: 670px;
-    height: 90px;
-    padding: 0px 32px;
+    width: 510px;
+    background-color: #360c72;
+    border-radius: 32px;
+    padding: 32px 40px;
+    margin: 24px; 
 }
+
+.happy-users-letters-btn{
+    display: flex;
+    width: 510px;
+}
+
 
 .happy-users-content h2{
     color: white;
@@ -527,12 +535,8 @@ footer{
     color: var(--color-parrafo);
 }
 
-.happy-users-letters{
+.happy-users-letters-mobile{
     display: none;
-    flex-direction: column;
-    width: 670px;
-    height: 90px;
-    padding: 0px 32px;
 }
 
 /* Media querie */
@@ -637,9 +641,17 @@ footer{
     .card-benefits-mobile{
         display: flex;
     }
-    
+
+    .happy-users-letters{
+        display: none;
+    }
+
+    .happy-users-content{
+        display: flex;
+    }
+
     .happy-users-letters-mobile{
-        background-color: var(--color-secundario-600)
+        display: flex;
     }
 }
 
@@ -651,5 +663,9 @@ footer{
 
     .happy-users{
         margin-top: 40px;
+    }
+
+    .happy-users-letters{
+        display: none;
     }
 }
