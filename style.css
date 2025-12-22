@@ -622,19 +622,5 @@ footer{
 }
 
 @media (width < 440px){
-    .vuelo-de-tu-negocio{
-        height: 800px;
-    }
-
-    .happy-users-content{
-        display: none;
-    }
-    
-    .happy-users-content-mobile{
-        display: flex;
-    }
-
-    .happy-users-letters h2{
-        font-size: 24px;
-    }
+    .
 }
