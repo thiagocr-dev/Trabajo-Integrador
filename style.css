@@ -268,6 +268,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-color: black;
 }
 
 .happy-users-content{
@@ -276,7 +277,10 @@ body{
     align-items: center;
     width: 1050px;
     height: 133px;
+    /*  
     background-color: #360c72;
+    */
+    background-color: red;
     border-radius: 32px;
     padding: 32px 40px;
     margin: 24px;
@@ -303,14 +307,7 @@ body{
     margin-top: 6px;
 }
 
-div.btn-know-more{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 32px;
-}
-
-div .btn-secondary-km{
+.btn-secondary-km{
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -322,8 +319,7 @@ div .btn-secondary-km{
     color: #652bdf;
     font-weight: 700;
 }
-
-div .btn-secondary-km:hover{
+.btn-secondary-km:hover{
     background-color: black;
     color: var(--color-terciario-100);
     cursor: pointer;
@@ -515,7 +511,7 @@ footer{
     flex-direction: column;
     height: 194px;
     height: 249px;
-    padding: 24px;
+    padding: 24px 24px 40px 24px;
 }
 
 .card-benefits-mobile i{
@@ -526,20 +522,13 @@ footer{
 
 .card-benefits-mobile h2{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 10px 0;
     color: var(--color-tt);
 }
 
 .card-benefits-mobile p{
     color: var(--color-parrafo);
-}
-
-.happy-users-content-mobile{
-        display: none;
-        flex-direction: column;    
-        justify-content: space-between;
-        height: 600px;
 }
 
 /* Media querie */
@@ -605,6 +594,10 @@ footer{
         font-size: 16px;
     }
 
+    .happy-users-content{
+        width: auto;
+        max-width: 100wh;
+    }
 }
 
 @media (width < 768px){
@@ -621,6 +614,9 @@ footer{
     }
 }
 
-@media (width < 440px){
-    .
+@media (width < 500px){
+    .text-container{
+        display: flex;
+        padding-bottom: 60px;
+    }
 }
