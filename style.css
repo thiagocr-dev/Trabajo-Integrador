@@ -16,7 +16,9 @@
     --color-terciario-100: #e4d7ff;
     --color-terciario-250: #bebebe;
     --color-card-200: #fcfbff; 
+    --color-terciario-mobile: #e3e3e3;
     --color-tt:#2b2b2b;
+    --color-parrafo: #a6a6a6;
 }
 
 ol, ul{
@@ -25,6 +27,10 @@ ol, ul{
 
 a{
     text-decoration: none;
+}
+
+body{
+    background-color: var(--color-principal-50);
 }
 
 
@@ -92,8 +98,7 @@ a{
     height: 39px;
 }
 
-
-header .header__nav-list{
+.header__nav-list{
     display: flex;
     height: 39px;
     align-items: center;
@@ -135,39 +140,6 @@ header .header__nav-list{
     width: 100wh;
 }
 
-/* SECTION BANNER-PRINCIPAL 
-.banner-principal{
-    height: 400px;
-    width: 1100px;
-    border-radius: 30px;
-}
-
-.banner-principal-section{
-    display: flex;
-    justify-content: center;
-    padding-top: 32px;
-}
-
-.texto-banner-principal{
-    height: 520px;
-    width: 112px;
-    }
-    
-.banner-principal-section h1{
-    color: white;
-    position: absolute;
-    font-size: 48px;
-    }
-
-    .banner-principal-section h4{
-    color: #50505a;
-    position: absolute;
-    margin-top: 80px;
-    font-size: 24px;
-}
-*/
-
-
 /* Contenedor de todas las tarjetas */
 
 .text-benefits{
@@ -185,12 +157,12 @@ header .header__nav-list{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 32px;
 }
 
 .section-card-benefits{
     width: 1022px;
-    height: 248px;
+    height: 320px;
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,7 +205,7 @@ header .header__nav-list{
 }
 
 .card-benefits-left p{
-    color: #6a6a82;
+    color: var(--color-parrafo);
     width: 268px;
     height: 52px;
     font-size: 18px;
@@ -258,7 +230,7 @@ header .header__nav-list{
 }
 
 .card-benefits-middle p{
-    color: #6a6a82;
+    color: var(--color-parrafo);
     width: 268px;
     height: 52px;
     font-size: 18px;
@@ -283,7 +255,7 @@ header .header__nav-list{
 }
 
 .card-benefits-right p{
-    color: #6a6a82;
+    color: var(--color-parrafo);
     width: 268px;
     height: 52px;
     font-size: 18px;
@@ -294,7 +266,8 @@ header .header__nav-list{
 .happy-users{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    align-items: center;
+    padding: 20px;
 }
 
 .happy-users-content{
@@ -359,7 +332,6 @@ div .btn-secondary-km:hover{
 /* SECCION MEDIOS DE PAGO */
 
 
-
 .pay-methods-letters{
     display: flex;
     flex-direction: column;
@@ -392,7 +364,6 @@ div .btn-secondary-km:hover{
     align-items: center;
     margin-top: 60px;
 }
-
 
 .pay-card{
     display: flex;
@@ -487,23 +458,91 @@ footer{
     color: #9172e6;
 }
 
-.header__logo-mobile{
+.header__mobile{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    padding: 0 24px;
+    background-color: white;
+}
+
+.header__mobile-btn{
+    display: none;  
+    align-items: center; 
+    border: none;
+    font-size: 28px;
+    background-color: white;   
+}
+
+.header__mobile-btn:hover{
+    cursor: pointer;
+}
+
+.header__mobile-logo{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40px;
+    height: 40px;
+}
+
+.header__mobile-logo{
+    cursor: pointer;
+}
+
+.text-container .text-benefits{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 41px;
-    height: 980px;
+    padding: 0 6px;
+}
+
+.section-card-benefits-mobile{
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    width: 687px;
+    height: 618px;
+}
+
+.card-benefits-mobile{
+    display: none;
+    flex-direction: column;
+    height: 194px;
+    height: 249px;
+    padding: 24px;
+}
+
+.card-benefits-mobile i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-benefits-mobile h2{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+    color: var(--color-tt);
+}
+
+.card-benefits-mobile p{
+    color: var(--color-parrafo);
+}
+
+.happy-users-content-mobile{
+        display: none;
+        flex-direction: column;    
+        justify-content: space-between;
+        height: 600px;
 }
 
 /* Media querie */
-
-@media (min-width: 830px){
-    .section-card-benefits{
-        grid-gap: 16px;
-        gap: 16px;
-    }
-}
 
 @media (width < 992px){
     header nav{
@@ -517,8 +556,85 @@ footer{
     .header__logo-container{
         display: none;
     }
-
-    .header__logo-mobile{
+    
+    .header__mobile{
         display: flex;
+        }
+
+    .header__mobile-btn{
+        display: flex;
+    }
+
+    .header__mobile-logo{
+        display: flex;
+    }
+
+    .text-benefits{
+        font-size: 30px;
+    }
+
+    .vuelo-de-tu-negocio{
+        display: flex;
+    }
+
+    .section-card-benefits{
+        display: flex;
+    }
+        
+    .card-benefits-left h2{
+        font-size: 20px;
+    }
+
+    .card-benefits-left p{
+        font-size: 16px;
+    }
+
+    .card-benefits-middle h2{
+        font-size: 20px;
+    }
+
+    .card-benefits-middle p{
+        font-size: 16px;
+    }
+
+    .card-benefits-right h2{
+        font-size: 20px;
+    }
+
+    .card-benefits-right p{
+        font-size: 16px;
+    }
+
+}
+
+@media (width < 768px){
+    .section-card-benefits{
+        display: none;
+    }
+
+    .section-card-benefits-mobile{
+        display: flex;
+    }
+    
+    .card-benefits-mobile{
+        display: flex;
+    }
+}
+
+@media (width < 440px){
+    .vuelo-de-tu-negocio{
+        height: 800px;
+    }
+
+    .happy-users-content{
+        display: none;
+    }
+    
+    .happy-users-content-mobile{
+        display: flex;
+    }
+
+    .happy-users-letters h2{
+        font-size: 24px;
     }
 }
