@@ -138,7 +138,6 @@ Elegí cuando acreditar tus ventas
 .div-header{
     background-color:white;
     outline: var(--color-secundario-300) solid 1px;
-    width: 100wh;
 }
 
 /* Contenedor de todas las tarjetas */
@@ -494,6 +493,10 @@ footer{
     cursor: pointer;
 }
 
+.div-header-mobile{
+    background-color: white;
+}
+
 .text-container .text-benefits{
     display: flex;
     justify-content: center;
@@ -505,9 +508,10 @@ footer{
     display: none;
     flex-direction: column;
     justify-content: center;
-    padding: 24px;
-    width: 687px;
-    height: 618px;
+    padding: 12px;
+    gap: 15px;
+    width: 300px;
+    height: 800px;
 }
 
 .card-benefits-mobile{
@@ -515,7 +519,8 @@ footer{
     flex-direction: column;
     height: 194px;
     height: 249px;
-    padding: 24px 24px 40px 24px;
+    line-height: 1.4;
+    background-color: white;
 }
 
 .card-benefits-mobile i{
@@ -564,6 +569,10 @@ footer{
 
     .header__mobile-logo{
         display: flex;
+    }
+
+    .text-container{
+        padding-bottom: 60px;
     }
 
     .text-benefits{
@@ -639,7 +648,7 @@ footer{
     }
     
     .card-benefits-mobile{
-        display: flex;
+        display: flex; 
     }
 
     .happy-users-letters{
@@ -656,15 +665,6 @@ footer{
 }
 
 @media (width < 500px){
-    .text-container{
-        display: flex;
-        padding-bottom: 60px;
-    }
-
-    .happy-users{
-        margin-top: 40px;
-    }
-
     .happy-users-letters{
         display: none;
     }
