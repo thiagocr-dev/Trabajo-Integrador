@@ -112,8 +112,6 @@ body{
     gap: 16px;
     border-radius: 16px;
 }   
-Te damos la bienvenida al vuelo de tu negocio
-Elegí cuando acreditar tus ventas
 
 .header__nav-item:hover{
     background-color: var(--color-terciario-100);
@@ -527,20 +525,21 @@ footer{
     color: var(--color-parrafo);
 }
 
-.happy-users-mobile{
+/* .happy-users-mobile{
     display: none;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    height: 198px;
-    
-}
+} */
 
 .happy-users-container-mobile{
     display: none;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
     width: 617px;
+    height: 198px;
     border-radius: 32px;
     background-color: #360c72;
     margin: 0 24px;
@@ -548,12 +547,14 @@ footer{
 }
 
 .happy-users-container-mobile h2{
+    display: none;
     color: white;
     font-size: 24px;
     font-weight: 600;
 }
 
 .happy-users-container-mobile p{
+    display: none;
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -685,29 +686,20 @@ footer{
         display: flex; 
     }
 
-    .happy-users{
+    .happy-users-letters{
         display: none;
     }
 
-    .happy-users-mobile{
-        display: flex;
+    .happy-users-letters-btn{
+        display: none;
     }
-        
-    .happy-users-container-mobile{
+    
+    .happy-users-mobile{
         display: flex;
     }
 
     .happy-users-letters-mobile{
         display: flex;
-        flex-direction: column;
     }
-
-    .happy-users-letters-btn-mobile{
-        display: flex;
-    }
-
-    .btn-secondary-km-mobile{
-        display: flex;
-    }
-}    
+}
 
