@@ -371,7 +371,7 @@ body{
 .pay-card h4{
     font-size: 18px;
     font-weight: 300;
-    margin-bottom: 70px;
+    margin-bottom: 52px;
     line-height: 1.5;
 }
 
@@ -584,6 +584,10 @@ footer{
     display: none;
 }
 
+.footer__mobile-logo{
+    display: none;
+}
+
 /* Media querie */
 
 @media (width < 992px){
@@ -678,6 +682,12 @@ footer{
     }
 }
 
+@media (width < 840px){
+    .pay-card h4{
+        margin-bottom: 18px;
+    }
+}
+
 @media (width < 768px){
     .vuelo-de-tu-negocio{
         justify-content: start;
@@ -764,8 +774,13 @@ footer{
         display: flex;
     }
 
-    .pay-card a{
-        width: 100%;
+    .btn-secondary-pay{
+        width: auto;
+    }
+
+    .footer__logo{
+        display: flex;
+        justify-content: center;
     }
 }
 
